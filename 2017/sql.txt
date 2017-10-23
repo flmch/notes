@@ -1,0 +1,41 @@
+1. Batch Separator GO
+	*GO is not a sql statement, it's a batch separator only understand by SSMS
+	*Batch separator can not be used in stored procedure
+2. Partition
+	OVER(PARTITION BY *** ORDER BY ***)
+3. get table schema
+	SELECT *
+	FROM INFORMATION_SCHEMA.COLUMNS
+	WHERE table_names = 'tablenames'
+4. SSMS - Sql Server Management Studio
+5. Loop in Sql Server
+	There is no For loop in sql server, there is only WHILE loop, the syntax is:
+	DECLARE @a INT;
+	SET @a = 1;
+	WHILE @a < 10
+	BEGIN
+		PRINT @a;
+		SET @a = @a +1;
+	END;
+6.WITH AS statment
+7.temporary table; tempdb
+	temporary table can be define with # or ## in front of table name.
+	temporary tables are saved in tempdb, when use OBJECT_ID() function
+	to retrieve temporary tables' id, database name must be explicitly specified.
+	for example: IF OBJECT_ID('tempdb.dbo.#tblname', 'U') IS NOT NULL
+
+8. Exist Keyword
+	SQL statements that use the EXISTS condition are very inefficient since the sub-query is RE-RUN for EVERY row in the outer query's table. 
+	There are more efficient ways to write most queries, that do not use the EXISTS condition.
+
+
+9. GROUP BY ... HAVING
+
+Keywords:
+
+over
+partition
+EXISTS
+
+Functions:
+row_number()

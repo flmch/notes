@@ -1,0 +1,28 @@
+numpy
+
+ndarray:
+
+* ndarray is mutable
+
+1. create ndarray
+	arr = np.random.random(0,10,10)
+
+2. insert element/array
+	np.insert
+
+3. delete element
+	np.delete
+
+4. modify value
+	assign directly, since ndarray is mutalbe, assignment is inplaceb
+
+5. indexing value
+	arr[start:end:step]
+	arr[(arr>a) & (arr<b)]
+
+6. map/filter/reduce array
+	vectorize
+
+7. sort array
+	arr.sort()
+	sort is inplace

@@ -1,0 +1,21 @@
+1. confusion matriax
+
+	True mean predict correctly,
+	Positive means prediction is positive
+
+	True Positive  False Negative
+	Flase Positive True Negative
+
+	Acuracy: T / ALL
+	Precision: TP/ Prediction Positive
+	TPR/Sensitivity/Recall: TP/ Condition Positive
+	FPR/fall-out: FP/ Condition Positive
+
+
+2. Hyperparameter
+
+	hyperparameter in bayesian statistic and hyperparameter in ML is different concept.
+	In bayesian statistic, hyperparamter is the parameter of paramtere.
+	In ML, hyperparameter is paramter of the model, such as learning rate, K in k-means etc.
+
+??KS ROC
