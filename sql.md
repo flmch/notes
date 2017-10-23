@@ -1,6 +1,38 @@
+# MySQL
+
+## Topics
+
+* add column based on other columns
+
+```sql
+alter table tbl
+add column col1 float
+
+update table tbl
+set col1 = col2/col3
+```
+
+* rename column
+
+```sql
+rename table 'tbl1' to 'tbl2'
+```
+
+* group by year and month
+
+```sql
+select
+	year(date)
+	,month(date)
+from tbl1
+group by 
+	year(date)
+	,month(date)
+```
 
 
-[TOC]
+
+
 
 # Sql Server
 

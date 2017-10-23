@@ -1,7 +1,3 @@
-
-
-[TOC]
-
 ## Study Log
 
 ### Week 2017.08.21
