@@ -42,6 +42,18 @@ group by
   GO is not a sql statement, it's a batch separator only understand by SSMS.
   Batch separator can not be used in stored procedure.
 
+* Index vs primary key
+
+  primary key implies clustered unique index
+
+  unique index can contains null in mysql, primary key can not
+
+* Clustered vs NonClustered index
+
+  clustered index sort inplace. there is only clustered index for one table
+
+  nonclustered index do not sort table, just store the content of row index
+
 ## Topics
 
 ### Stored Procedure

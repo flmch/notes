@@ -4,12 +4,41 @@
 
 - ndarray is mutable
 
+### Questions
+
+1. loop vs np.vectorize vs apply_along_axis, which is faster?
+
+```python
+nparr = np.arange(10000000)
+
+start_time = time.time()
+result = [func1(x) for x in nparr]
+elapse_time = time.time()-start_time
+print(elapse_time)
+# 4.13100004196167
+
+start_time = time.time()
+result = func1_vec(nparr)
+elapse_time = time.time()-start_time
+print(elapse_time)
+# 3.5230000019073486
+
+start_time = time.time()
+result3 = np.apply_along_axis(func1,0,nparr)
+elapse_time = time.time()-start_time
+print(elapse_time)
+# 0.1099998950958252
+
+vectorize slower than loop but why
+```
 ## Numpy
 
 ###Basic 
 
 ```py
-# create ndarray
+###############################
+# create
+###############################
 arr = np.random.random(0,10,10)
 # Create vector from 10 to 20
 arr1 = np.arange(10,20)
@@ -17,15 +46,25 @@ arr1 = np.arange(10,20)
 # insert element/array
 np.insert
 
-# delete element
-np.delete
-
-# modify value
-# assign directly, since ndarray is mutalbe, assignment is inplace
-
+###############################
+# read
+###############################
 # indexing value
 arr[start:end:step]
 arr[(arr>a) & (arr<b)]
+
+# get index of max value
+np.argmax(arr)
+
+# get all index of values meet particular criteria
+# return np array of index
+np.where((arr == val1) & (arr < val2))
+
+###############################
+# update
+###############################
+# modify value
+# assign directly, since ndarray is mutalbe, assignment is inplace
 
 # map/filter/reduce array
 vectorize
@@ -34,8 +73,24 @@ apply_along_axis
 # sort array（sort is inplace）
 arr.sort()
 
-# compare two lists, get elements that in l1 but not in l2
-list(set(l1) - set(l2))
+# cumsum
+np.cumsum(arr)
+
+###############################
+# remove
+###############################
+# delete element
+np.delete
+
+###############################
+# multiple array
+###############################
+# combine two np array
+np.concatenate([a1,a2,a3,...])
+
+# compare array
+# setdiff1d find elements in arr1 but not in arr2
+np.setdiff1d(arr1,arr2)
 ```
 
 ## Pandas

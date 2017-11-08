@@ -15,6 +15,7 @@
 2. multiprocessin/thread
 
 
+
 ## Concepts
 
 ### namespace
@@ -29,12 +30,33 @@ mapping from names to objects
 # ternary conditional operator
 val1 if condition else b
 
+########################
+# delete
+########################
+# delete by value(only first occurance will be deleted)
+li.remove(a)
+# delete by index
+del li[1]
+
+# compare two lists, get elements that in l1 but not in l2
+list(set(l1) - set(l2))
+
 # concate two list
 li = li1 + li2
+```
 
+### Variable Type
+
+```python
+# float keep two digit of decimal
+# 1 use round method
+round(flt,2)
+# 2 use format method
+format(flt, ".2g")
 ```
 
 ###  module
+
 1. use module
   import module as alias
   import package.module as alias
@@ -72,7 +94,7 @@ sound - \__init__.py
 
 
 ### class
-  1. when class variable is pointing to a dataframe, the dataframe is passed by reference.
+    1. when class variable is pointing to a dataframe, the dataframe is passed by reference.
 ```python
 	class Test:
 		def __init__(self, df):

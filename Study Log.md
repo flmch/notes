@@ -17,3 +17,14 @@
 
 * Bitcoin Script
 
+  ​
+
+
+### Week 2017.11.03
+
+Generative vs Discriminative model
+
+Bayesien vs Frequenist
+
+
+

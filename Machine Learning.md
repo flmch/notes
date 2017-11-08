@@ -9,6 +9,7 @@
 
 ------------------------------------------
 * [Parametric and Nonparametric Machine Learning Algorithms](http://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/)
+* [Generative vs Discriminative; Bayesian vs fequenist](https://lingpipe-blog.com/2013/04/12/generative-vs-discriminative-bayesian-vs-frequentist/)
 
 ## Learning Theory
 
